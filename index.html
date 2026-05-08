@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>বাংলাদেশ ভাইরাল টিপস</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:linear-gradient(135deg,#0f172a,#1e293b);
+    color:white;
+    text-align:center;
+}
+
+.container{
+    max-width:700px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+.logo{
+    font-size:42px;
+    font-weight:bold;
+    color:#38bdf8;
+}
+
+h1{
+    font-size:40px;
+    margin-top:20px;
+}
+
+p{
+    font-size:20px;
+    line-height:1.6;
+    color:#d1d5db;
+}
+
+.box{
+    background:rgba(255,255,255,0.08);
+    padding:30px;
+    border-radius:20px;
+    margin-top:30px;
+}
+
+.timer{
+    font-size:34px;
+    font-weight:bold;
+    color:#facc15;
+    margin-top:15px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    background:#22c55e;
+    color:white;
+    padding:18px 40px;
+    border-radius:50px;
+    text-decoration:none;
+    font-size:24px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+    background:#16a34a;
+}
+
+.badge{
+    margin-top:20px;
+    font-size:18px;
+    color:#facc15;
+}
+
+.live-users{
+    margin-top:35px;
+    background:rgba(255,255,255,0.07);
+    padding:20px;
+    border-radius:15px;
+}
+
+.user-box{
+    margin:12px 0;
+    font-size:18px;
+    color:#e5e7eb;
+    animation:fade 1s ease-in-out;
+}
+
+.footer{
+    margin-top:50px;
+    color:#9ca3af;
+    font-size:14px;
+}
+
+@keyframes fade{
+    from{opacity:0;}
+    to{opacity:1;}
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="logo">🔥 Viral BD Zone 🔥</div>
+
+<h1>বাংলাদেশের ভাইরাল টিপস & অনলাইন ইনকাম আপডেট</h1>
+
+<p>
+নতুন নতুন মোবাইল ট্রিকস, ভাইরাল ভিডিও, অনলাইন ইনকাম টিপস এবং এক্সক্লুসিভ আপডেট পেতে নিচের বাটনে ক্লিক করুন 👇
+</p>
+
+<div class="box">
+
+<h2>⏳ অফার শেষ হতে বাকি</h2>
+
+<div class="timer" id="countdown">05:00</div>
+
+<a class="btn" href="https://www.profitablecpmratenetwork.com/rpv4h4i4z?key=ae93e25455724cb7f74e01adca560c14" target="_blank">
+🚀 এখনই দেখুন
+</a>
+
+<div class="badge">
+⭐ হাজারো মানুষ ইতিমধ্যে দেখছে!
+</div>
+
+</div>
+
+<div class="live-users">
+<h2>🎉 সাম্প্রতিক বেনিফিট পাওয়া ইউজার</h2>
+
+<div class="user-box" id="user1"></div>
+<div class="user-box" id="user2"></div>
+<div class="user-box" id="user3"></div>
+<div class="user-box" id="user4"></div>
+
+</div>
+
+<div class="footer">
+© 2026 Viral BD Zone | All Rights Reserved
+</div>
+
+</div>
+
+<script>
+// 5 Minute Timer
+let time = 300;
+
+function updateTimer(){
+    let minutes = Math.floor(time / 60);
+    let seconds = time % 60;
+
+    minutes = minutes < 10 ? "0" + minutes : minutes;
+    seconds = seconds < 10 ? "0" + seconds : seconds;
+
+    document.getElementById("countdown").innerHTML = minutes + ":" + seconds;
+
+    if(time > 0){
+        time--;
+    }
+}
+
+setInterval(updateTimer, 1000);
+
+// Random User Names
+const users = [
+"✅ Rahim from Dhaka benefited",
+"✅ Jony from Chittagong benefited",
+"✅ Arif from Sylhet benefited",
+"✅ Tanim from Khulna benefited",
+"✅ Shakib from Rajshahi benefited",
+"✅ Nayeem from Barisal benefited",
+"✅ Imran from Cumilla benefited",
+"✅ Fahim from Gazipur benefited"
+];
+
+function randomUsers(){
+    document.getElementById("user1").innerHTML = users[Math.floor(Math.random()*users.length)];
+    document.getElementById("user2").innerHTML = users[Math.floor(Math.random()*users.length)];
+    document.getElementById("user3").innerHTML = users[Math.floor(Math.random()*users.length)];
+    document.getElementById("user4").innerHTML = users[Math.floor(Math.random()*users.length)];
+}
+
+randomUsers();
+setInterval(randomUsers, 4000);
+</script>
+
+</body>
+</html>
